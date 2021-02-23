@@ -11,11 +11,22 @@ h1 {
 </head>
 <body>
   <h1>Ember Web components container demo</h1>
-  <!--<people-app></people-app>-->
-  <planets-app></planets-app>
-  <!--<script src="people/dist/assets/vendor-b91e997b3b681044fe11248dd5118d19.js"></script>-->
-  <!--<script src="people/dist/assets/people-app-4a64b67ee298e080f382b461c50b9729.js"></script>-->
-  <script src="planets/dist/assets/vendor.js"></script>
-  <script src="planets/dist/assets/planets-app.js"></script>
+  <!--
+    <ember-app
+    vendor-css="planets/dist/assets/vendor.css"
+    app-css="planets/dist/assets/planets-app.css"
+    vendor-js="planets/dist/assets/vendor.js"
+    app-js="planets/dist/assets/planets-app.js"
+    app-name="planets-app"
+    ></ember-app>
+  -->
+  <ember-app
+    vendor-css="people/dist/assets/vendor.css"
+    app-css="people/dist/assets/people-app.css"
+    vendor-js="people/dist/assets/vendor.js"
+    app-js="people/dist/assets/people-app.js"
+    app-name="people-app"
+    ></ember-app>
+  <script type="module" src="js/ember-app-component.js"></script>
 </body>
 </html>
